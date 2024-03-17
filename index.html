@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>이력서</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 아래부터 본문 -->
 
-<head>
-  <meta charset="utf-8" />
-  <title>이력서</title>
-  <link rel="stylesheet" href="resume.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
-</head>
-<!-- 아래부터 본문 -->
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <div class="header">
-          <div class="menu-left">
-            <li><a class="menu-left-1" href="#main">메인</a></li>
-            <li><a class="menu-left-2" href="#detail">상세 내용</a></li>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="header">
+            <div class="menu-left">
+              <li><a class="menu-left-1" href="#main">메인</a></li>
+              <li><a class="menu-left-2" href="#detail">상세 내용</a></li>
+            </div>
+            <div class="menu-right">
+              <li><a class="login" href="#">로그인</a></li>
+            </div>
           </div>
-          <div class="menu-right">
-            <li><a class="login" href="#">로그인</a></li>
-          </div>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <article>
+        <h1 id="title">이력서</h1>
+        <h2 id="name">양대우</h2>
+        <div class="profile">
+          <img
+            src="./images/yangyang.jpg"
+            alt="낙산해수욕장"
+            onclick="showProfileModal()"
+          />
         </div>
-      </ul>
-    </nav>
-  </header>
-  <main id="main">
-    <article>
-    <h1 id="title">이력서</h1>
-    <h2 id="name">양대우</h2>
-    <div class="profile"> 
-      <img src="./images/yangyang.jpg" alt="낙산해수욕장" onclick="showProfileModal()" />
-    </div>
-    <!-- <div class="profileModal" id="modal"> 
+        <!-- <div class="profileModal" id="modal"> 
       <img src="https://s.pstatic.net/static/www/mobile/edit/20240201_1095/upload_1706775713042cVCXR.png" alt="치지직 이미지" onclick="hideProfileModal()" />
     </div> -->
-    </article>
-    <article>
-    <div class="container">
-      <div class="item">
-        <h3 class="sub_title">기본 정보</h3>
-        <P>
-          <strong>국적</strong>: 대한민국<br />
-          <strong>주소</strong>: 경기도<br />
-          <strong>연락처</strong>: gmail.com
-        </P>
-      </div>
-      <div class="item">
-        <h3 class="sub_title">장보기</h3>
-        <ul>
-          <li>소주</li>
-          <li>라면</li>
-          <li>아몬드</li>
-        </ul>
-      </div>
-      <div class="item">
-        <h3 class="sub_title">관심 분야</h3>
-        <ol>
-          <li>운영</li>
-          <li>자동화</li>
-          <li>그로스해킹</li>
-        </ol>
-      </div>
-      <div class="item">
-        <h3 class="sub_title">검색 사이트</h3>
-        <ul>
-          <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
-          <li><a href="https://www.google.com" target="_blank">구글</a></li>
-        </ul>
-      </div>
-    </div>
-  </article>
-  
-  </main>
-  <footer>
-    <div class="footer_container">
-      <div class="footer_item">
-        <div>
-          <p>주소: 경기도 성남시</p>
-          <p>연락처: 010-1111-1111</p>
-          <p>연락처: 010-1111-1111</p>
+      </article>
+      <article>
+        <div class="container">
+          <div class="item">
+            <h3 class="sub_title">기본 정보</h3>
+            <p>
+              <strong>국적</strong>: 대한민국<br />
+              <strong>주소</strong>: 경기도<br />
+              <strong>연락처</strong>: gmail.com
+            </p>
+          </div>
+          <div class="item">
+            <h3 class="sub_title">장보기</h3>
+            <ul>
+              <li>달걀</li>
+              <li>라면</li>
+              <li>아몬드</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3 class="sub_title">관심 분야</h3>
+            <ol>
+              <li>운영</li>
+              <li>자동화</li>
+              <li>그로스해킹</li>
+            </ol>
+          </div>
+          <div class="item">
+            <h3 class="sub_title">검색 사이트</h3>
+            <ul>
+              <li>
+                <a href="https://www.naver.com" target="_blank">네이버</a>
+              </li>
+              <li><a href="https://www.google.com" target="_blank">구글</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div class="footer_item">
+          <div>
+            <p>주소: 경기도</p>
+            <p>연락처: 010-0000-0000</p>
+            <p>이메일: gmail.com</p>
+          </div>
+        </div>
+        <div class="footer_item">
+          <div>
+            <p>2024 Daewoo. All rights reserved.</p>
+          </div>
         </div>
       </div>
-      <div class="footer_item">
-        <div>
-          <p>2024 Daewoo. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
